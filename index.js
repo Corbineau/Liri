@@ -1,6 +1,7 @@
 var axios = require("axios");
 var spotify = require("node-spotify-api");
 
+//TODO: add .gitignore
 
 // 3. To retrieve the data that will power this app, you'll need to send requests using the `axios` package to the Bands in Town, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
 
