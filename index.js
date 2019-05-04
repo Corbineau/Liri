@@ -1,7 +1,39 @@
+require("dotenv").config();
+var keys = require("./keys.js");
 var axios = require("axios");
 var spotify = require("node-spotify-api");
+var inquirer = require("inquirer");
 
-//TODO: add .gitignore
+
+inquirer.prompt([
+    {
+            type: "list",
+            message: "What are you looking for?",
+            choices: ["Band tour dates", "Song Information", ""],
+            name: "source"
+
+    }
+
+])
+
+spotify.search({ type: `${type}`, query: `${songName}` }, function (err, data) {
+    if (err) {
+        console.log('Error occurred: ' + err);
+        return;
+    }
+
+    // Do something with 'data'
+});
+
+var findInAxios = (source, ) => {
+    if (something);
+
+}
+
+
+axios.get(url)
+
+
 
 // 3. To retrieve the data that will power this app, you'll need to send requests using the `axios` package to the Bands in Town, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
 
