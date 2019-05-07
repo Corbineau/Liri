@@ -9,14 +9,17 @@ var fs = require("fs");
 var spotify = new Spotify(keys.spotify);
 
 var divider = `\n--------------------------\n`
-var op;
+
+const doMovie = "movie-this";
+const doSong = "spotify-this-song";
+const doConcert = "concert-this";
 
 const appendRand = (cont) => {
     fs.appendFile("random.txt", `${cont},`, function (err) {
         if (err) throw err;
 
     });
-} 
+}
 
 inquirer.prompt([
     {
@@ -44,15 +47,15 @@ inquirer.prompt([
     }
 
 ]).then(function (response) {
-    console.log(response);
-    if (response.source === "concert-this") {
+    if (response.source === doConcert) {
         appendRand(response.source);
         inquirer.prompt([
             {
                 type: "input",
                 message: "What band would you like to see?",
                 name: "band",
-                default: "Neko Case"
+                default: "Neko Case",
+                validate: isBlank
             }
         ]).then(function (response) {
             var bandName = response.band;
@@ -60,28 +63,30 @@ inquirer.prompt([
 
         })
 
-    } else if (response.source === "spotify-this-song") {
+    } else if (response.source === doSong) {
         appendRand(response.source);
         inquirer.prompt([
             {
                 type: "input",
                 message: "What song are you searching for?",
                 name: "song",
-                default: "No Matter What You Do"
+                default: "No Matter What You Do",
+                validate: isBlank
             }
         ]).then(function (response) {
             var songName = response.song;
             findIt.songFind(songName);
 
         })
-    } else if (response.source === "movie-this") {
+    } else if (response.source === doMovie) {
         appendRand(response.source);
         inquirer.prompt([
             {
                 type: "input",
                 message: "What movie are you searching for?",
                 name: "movie",
-                default: "Being There"
+                default: "Being There",
+                validate: isBlank
             }
         ]).then(function (response) {
             var movieName = response.movie;
@@ -97,16 +102,20 @@ inquirer.prompt([
 
 })
 
-const checkInput = (input) => {
-    if(input === "movie-this") {
-        op = 1;
-    } else if(input = "spotify-this-song") {
-        op = 2;
-    } else if(input = "concert-this") {
-        op = 3;
+const isEven = (num) => {
+    if (num % 2 == 0) {
+        return true;
     } else {
-        op = 0;
+        return false;
     }
+}
+
+const isBlank = (val) => {
+    if(!val) {
+        return "You cannot submit a blank value."
+    } else {
+        return true; 
+}
 }
 
 
@@ -118,29 +127,34 @@ var random = () => {
         }
 
         let dataArr = data.split(",");
-
         let index = Math.floor(Math.random() * dataArr.length);
-        let index2 = index++;
-        let source = dataArr[index];
-        checkInput(source);
-        console.log(source);
 
-        if(op === 1) {
+
+        if ((index === 0) || (isEven(index))) {
+            let index2 = index++;
+            let source = dataArr[index];
             let term = dataArr[index2];
-            findIt.movieFind(term);
-            
-        } else if(op === 2){
-            let term = dataArr[index2];
-            findIt.concertFind(term);
-            
-        } else if ( op === 3) {
-            let term = dataArr[index2];
-            findIt.songFind(term);
+            console.log(source, term);
+            if (source === doMovie) {
+
+                findIt.movieFind(term);
+
+            } else if (source === doConcert) {
+                let term = dataArr[index2];
+                findIt.concertFind(term);
+
+            } else if (source === doSong) {
+                let term = dataArr[index2];
+                findIt.songFind(term);
+            } else {
+
+            }
+
         } else {
-            dataArr.find();
+
         }
-    });
-}
+    }
+    )}
 
 
 var findIt = {
@@ -172,7 +186,7 @@ var findIt = {
                 console.log(`Location: ${showData.loc}`);
                 console.log(`Lineup: ${showData.bands}`);
                 appendRand(bandName);
-                fs.appendFile("log.txt", showData, function (err) {
+                fs.appendFile("log.txt", `${divider}\n query: ${url} \n\n ${JSON.stringify(showData)}`, function (err) {
                     if (err) throw err;
 
                 });
@@ -215,7 +229,7 @@ var findIt = {
             console.log(`Plot: ${showData.plot}`);
             console.log(`Actors: ${showData.actors}`);
             appendRand(movieName);
-            fs.appendFile("log.txt", showData, function (err) {
+            fs.appendFile("log.txt", `${divider}\n query: ${url} \n\n ${JSON.stringify(showData)}`, function (err) {
                 if (err) throw err;
 
             });
@@ -240,7 +254,7 @@ var findIt = {
                 url: song.preview_url,
                 album: song.album.name
             }
-            for(let i = 0; i < song.artists.length; i++) {
+            for (let i = 0; i < song.artists.length; i++) {
                 showData.artists.push(song.artists[i].name);
             }
             console.log(`Song Title: ${showData.title}`);
@@ -248,7 +262,7 @@ var findIt = {
             console.log(`Preview URL: ${showData.url}`);
             console.log(`Album: ${showData.album}`);
             appendRand(songName);
-            fs.appendFile("log.txt", showData, function (err) {
+            fs.appendFile("log.txt", `${divider}\n query: ${url} \n\n ${JSON.stringify(showData)}`, function (err) {
                 if (err) throw err;
 
             });
