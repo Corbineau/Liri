@@ -24,68 +24,68 @@ inquirer.prompt([
         message: "What are you looking for?",
         choices: [
             {
-                message: "Band tour dates",
-                name: "concert-this"
+                name: "Band Tour Dates",
+                value: "concert-this"
             },
             {
-                message: "Song Information",
-                name: "spotify-this-song",
+                name: "Song Information",
+                value: "spotify-this-song",
             },
             {
-                message: "Movie Information",
-                name: "movie-this"
+                name: "Movie Information",
+                value: "movie-this"
             },
             {
-                message: "Do What It Says!",
-                name: "Do-what-it-says"
+                name: "Do What It Says!",
+                value: "Do-what-it-says"
             }],
         name: "source"
 
     }
 
 ]).then(function (response) {
-    checkInput(response.source);
-    if (op === 1) {
+    console.log(response);
+    if (response.source === "concert-this") {
         appendRand(response.source);
         inquirer.prompt([
             {
                 type: "input",
                 message: "What band would you like to see?",
-                name: "band"
+                name: "band",
+                default: "Neko Case"
             }
         ]).then(function (response) {
             var bandName = response.band;
-            appendRand(bandName);
             findIt.concertFind(bandName);
 
         })
 
-    } else if (op === 2) {
+    } else if (response.source === "spotify-this-song") {
         appendRand(response.source);
         inquirer.prompt([
             {
                 type: "input",
                 message: "What song are you searching for?",
-                name: "song"
+                name: "song",
+                default: "No Matter What You Do"
             }
         ]).then(function (response) {
             var songName = response.song;
-            appendRand(songName);
             findIt.songFind(songName);
 
         })
-    } else if (op === 3) {
+    } else if (response.source === "movie-this") {
         appendRand(response.source);
         inquirer.prompt([
             {
                 type: "input",
                 message: "What movie are you searching for?",
-                name: "movie"
+                name: "movie",
+                default: "Being There"
             }
         ]).then(function (response) {
             var movieName = response.movie;
-            appendRand(movieName);
-            findIt.movieFind(movieName.toLowerCase());
+            findIt.movieFind(movieName);
 
 
         })
@@ -171,6 +171,7 @@ var findIt = {
                 console.log(`Venue name: ${showData.venue}`);
                 console.log(`Location: ${showData.loc}`);
                 console.log(`Lineup: ${showData.bands}`);
+                appendRand(bandName);
                 fs.appendFile("log.txt", showData, function (err) {
                     if (err) throw err;
 
@@ -213,7 +214,7 @@ var findIt = {
             console.log(`Language: ${showData.lang}`);
             console.log(`Plot: ${showData.plot}`);
             console.log(`Actors: ${showData.actors}`);
-
+            appendRand(movieName);
             fs.appendFile("log.txt", showData, function (err) {
                 if (err) throw err;
 
@@ -246,7 +247,7 @@ var findIt = {
             console.log(`Artist(s): ${showData.artists.join(", ")}`);
             console.log(`Preview URL: ${showData.url}`);
             console.log(`Album: ${showData.album}`);
-
+            appendRand(songName);
             fs.appendFile("log.txt", showData, function (err) {
                 if (err) throw err;
 
