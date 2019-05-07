@@ -71,7 +71,7 @@ inquirer.prompt([
         ]).then(function (response) {
             var movieName = response.movie;
             console.log(movieName);
-            findIt.movieFind(movieName);
+            findIt.movieFind(movieName.toLowerCase());
 
 
         })
@@ -100,38 +100,42 @@ var findIt = {
     concertFind: function (bandName) {
         let url = `https://rest.bandsintown.com/artists/${bandName}/events?app_id=codingbootcamp`;
         console.log(url);
-        axios.get(url, function (err, data) {
+        axios.get(url, function (err) {
             if (err) {
                 console.log(`Error occurred: ${err}`);
                 return;
             }
+           
+
+        }).then(function(response){
             console.log(divider);
-            console.log(data);
-            // let showData = {
-            //     venue: data.venue,
-            //     location: 
+            console.log(response);
+            let showData = {
+                // venue: response.venue,
+                // location: 
 
 
-            // }
+            }
 
             fs.appendFile("log.txt", showData, function (err) {
                 if (err) throw err;
 
             });
-
         });
 
     },
 
     movieFind: function (movieName) {
-        let url = `http://www.omdbapi.com/?t=${movieName}&y=&plot=short&apikey=trilogy`;
+        let url = `https://www.omdbapi.com/?t=${movieName}&y=&plot=short&apikey=trilogy`;
         console.log(url);
-        axios.get(url, function (err, response) {
+        axios.get(url, function (err) {
             if (err) {
                 console.log(`Error occurred: ${err}`);
-                fs.appendFile("log.txt", err)
+                fs.appendFile("log.txt", err);
                 return;
             }
+            
+        }).then(function(response){
             console.log(response.data);
             let showData = {
                 title: response.data.Title,
@@ -159,7 +163,7 @@ var findIt = {
                 return;
             }
             console.log(divider);
-            let showData = JSON.stringify(data);
+            let showData = JSON.stringify(data.tracks);
             console.log(showData);
 
             fs.appendFile("log.txt", showData, function (err) {
