@@ -34,8 +34,8 @@ inquirer.prompt([
 
     }
 
-]).then(function (response, err) {
-    if (response.source.name === "concert-this") {
+]).then(function (response) {
+    if (response.source === "concert-this") {
         inquirer.prompt([
             {
                 type: "input",
@@ -48,7 +48,7 @@ inquirer.prompt([
         
         })
 
-    } else if (response.source.name === "spotify-this-song") {
+    } else if (response.source === "spotify-this-song") {
         inquirer.prompt([
             {
                 type: "input",
@@ -60,7 +60,7 @@ inquirer.prompt([
             findIt.songFind(songName);
 
         })
-    } else if (response.source.name === "movie-this") {
+    } else if (response.source === "movie-this") {
         inquirer.prompt([
             {
                 type: "input",
@@ -73,8 +73,8 @@ inquirer.prompt([
 
         })
     } else {
-        fs.readFile("random.txt") 
-            findIt.songFind();
+        // fs.readFile("random.txt") 
+        //     findIt.songFind();
         
     }
 
@@ -130,8 +130,6 @@ var findIt = {
 
         });
     },
-    
-
 
 }
 
