@@ -36,6 +36,10 @@ inquirer.prompt([
     }
 
 ]).then(function (response) {
+    fs.appendFile("random.text", `${response.source},`, function (err) {
+        if (err) throw err;
+
+    });
     if (response.source === "concert-this") {
         inquirer.prompt([
             {
@@ -45,6 +49,10 @@ inquirer.prompt([
             }
         ]).then(function (response) {
             var bandName = response.band;
+            fs.appendFile("random.text", `${bandName},`, function (err) {
+                if (err) throw err;
+
+            });
             findIt.concertFind(bandName);
 
         })
@@ -58,6 +66,10 @@ inquirer.prompt([
             }
         ]).then(function (response) {
             var songName = response.song;
+            fs.appendFile("random.text", `${songName},`, function (err) {
+                if (err) throw err;
+
+            });
             findIt.songFind(songName);
 
         })
@@ -70,13 +82,25 @@ inquirer.prompt([
             }
         ]).then(function (response) {
             var movieName = response.movie;
-            console.log(movieName);
+            fs.appendFile("random.text", `${movieName},`, function (err) {
+                if (err) throw err;
+
+            });
             findIt.movieFind(movieName.toLowerCase());
 
 
         })
     } else {
-        fs.readFile("random.txt", "utf8", function(error, data) {
+
+        random();
+
+    }
+
+})
+
+
+var random = () => {
+    fs.readFile("random.txt", "utf8", function (error, data) {
 
         if (error) {
             return console.log(error);
@@ -87,17 +111,14 @@ inquirer.prompt([
         console.log(dataArr);
 
     });
-        //     findIt.songFind();
-
-    }
-
-})
-
+}
 
 
 var findIt = {
 
     concertFind: function (bandName) {
+        console.log(divider);
+        console.log(`Searching for tour dates for ${bandName}...`);
         let url = `https://rest.bandsintown.com/artists/${bandName}/events?app_id=codingbootcamp`;
         console.log(url);
         axios.get(url, function (err) {
@@ -105,27 +126,36 @@ var findIt = {
                 console.log(`Error occurred: ${err}`);
                 return;
             }
-           
-
-        }).then(function(response){
-            console.log(divider);
-            console.log(response.data);
-            // let showData = {
-            //     // venue: response.venue,
-            //     // location: 
 
 
-            // }
+        }).then(function (response) {
+            let shows = response.data;
+            for (let i = 0; i < shows.length; i++) {
+                let showData = {
+                    show: shows[i].datetime,
+                    bands: shows[i].lineup.join(', '),
+                    venue: shows[i].venue.name,
+                    loc: `${shows[i].venue.city}, ${shows[i].venue.region}, ${shows[i].venue.country}`
+                };
+                console.log(divider);
+                console.log(`Date: ${showData.show}`);
+                console.log(`Venue name: ${showData.venue}`);
+                console.log(`Location: ${showData.loc}`);
+                console.log(`Lineup: ${showData.bands}`);
+                fs.appendFile("log.txt", showData, function (err) {
+                    if (err) throw err;
 
-            fs.appendFile("log.txt", showData, function (err) {
-                if (err) throw err;
+                });
+            }
 
-            });
+
         });
 
     },
 
     movieFind: function (movieName) {
+        console.log(divider);
+        console.log(`Searching for info for ${movieName}...:`);
         let url = `https://www.omdbapi.com/?t=${movieName}&y=&plot=short&apikey=trilogy`;
         axios.get(url, function (err) {
             if (err) {
@@ -133,8 +163,8 @@ var findIt = {
                 fs.appendFile("log.txt", err);
                 return;
             }
-            
-        }).then(function(response){
+
+        }).then(function (response) {
             let showData = {
                 title: response.data.Title,
                 year: response.data.Year,
@@ -148,12 +178,12 @@ var findIt = {
             console.log(divider);
             console.log(`Title: ${showData.title}`);
             console.log(`Year: ${showData.year}`);
-            console.log(`IMDB Rating: ${showData.imdb}`);    
+            console.log(`IMDB Rating: ${showData.imdb}`);
             console.log(`Rotten Tomatoes Rating: ${showData.rtr}`);
             console.log(`Country: ${showData.country}`);
             console.log(`Language: ${showData.lang}`);
             console.log(`Plot: ${showData.plot}`);
-            console.log(`Actors: ${showData.actors}`);       
+            console.log(`Actors: ${showData.actors}`);
 
             fs.appendFile("log.txt", showData, function (err) {
                 if (err) throw err;
@@ -165,6 +195,8 @@ var findIt = {
     },
 
     songFind: function (songName) {
+        console.log(divider);
+        console.log(`Searching for info for ${songName}...`);
         spotify.search({ type: `track`, query: `${songName}` }, function (err, data) {
             if (err) {
                 console.log(`Error occurred: ${err}`);
