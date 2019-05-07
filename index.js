@@ -109,13 +109,13 @@ var findIt = {
 
         }).then(function(response){
             console.log(divider);
-            console.log(response);
-            let showData = {
-                // venue: response.venue,
-                // location: 
+            console.log(response.data);
+            // let showData = {
+            //     // venue: response.venue,
+            //     // location: 
 
 
-            }
+            // }
 
             fs.appendFile("log.txt", showData, function (err) {
                 if (err) throw err;
@@ -127,7 +127,6 @@ var findIt = {
 
     movieFind: function (movieName) {
         let url = `https://www.omdbapi.com/?t=${movieName}&y=&plot=short&apikey=trilogy`;
-        console.log(url);
         axios.get(url, function (err) {
             if (err) {
                 console.log(`Error occurred: ${err}`);
@@ -136,16 +135,25 @@ var findIt = {
             }
             
         }).then(function(response){
-            console.log(response.data);
             let showData = {
                 title: response.data.Title,
                 year: response.data.Year,
+                imdb: response.data.Ratings[0].Value,
+                rtr: response.data.Ratings[1].Value,
+                lang: response.data.Language,
+                country: response.data.Country,
+                plot: response.data.Plot,
+                actors: response.data.Actors
             }
             console.log(divider);
-            console.log(
-                showData.title,
-                showData.year
-            );
+            console.log(`Title: ${showData.title}`);
+            console.log(`Year: ${showData.year}`);
+            console.log(`IMDB Rating: ${showData.imdb}`);    
+            console.log(`Rotten Tomatoes Rating: ${showData.rtr}`);
+            console.log(`Country: ${showData.country}`);
+            console.log(`Language: ${showData.lang}`);
+            console.log(`Plot: ${showData.plot}`);
+            console.log(`Actors: ${showData.actors}`);       
 
             fs.appendFile("log.txt", showData, function (err) {
                 if (err) throw err;
