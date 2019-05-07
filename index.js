@@ -9,6 +9,14 @@ var fs = require("fs");
 var spotify = new Spotify(keys.spotify);
 
 var divider = `\n--------------------------\n`
+var op;
+
+const appendRand = (cont) => {
+    fs.appendFile("random.txt", `${cont},`, function (err) {
+        if (err) throw err;
+
+    });
+} 
 
 inquirer.prompt([
     {
@@ -36,11 +44,9 @@ inquirer.prompt([
     }
 
 ]).then(function (response) {
-    fs.appendFile("random.text", `${response.source},`, function (err) {
-        if (err) throw err;
-
-    });
-    if (response.source === "concert-this") {
+    checkInput(response.source);
+    if (op === 1) {
+        appendRand(response.source);
         inquirer.prompt([
             {
                 type: "input",
@@ -49,15 +55,13 @@ inquirer.prompt([
             }
         ]).then(function (response) {
             var bandName = response.band;
-            fs.appendFile("random.text", `${bandName},`, function (err) {
-                if (err) throw err;
-
-            });
+            appendRand(bandName);
             findIt.concertFind(bandName);
 
         })
 
-    } else if (response.source === "spotify-this-song") {
+    } else if (op === 2) {
+        appendRand(response.source);
         inquirer.prompt([
             {
                 type: "input",
@@ -66,14 +70,12 @@ inquirer.prompt([
             }
         ]).then(function (response) {
             var songName = response.song;
-            fs.appendFile("random.text", `${songName},`, function (err) {
-                if (err) throw err;
-
-            });
+            appendRand(songName);
             findIt.songFind(songName);
 
         })
-    } else if (response.source === "movie-this") {
+    } else if (op === 3) {
+        appendRand(response.source);
         inquirer.prompt([
             {
                 type: "input",
@@ -82,10 +84,7 @@ inquirer.prompt([
             }
         ]).then(function (response) {
             var movieName = response.movie;
-            fs.appendFile("random.text", `${movieName},`, function (err) {
-                if (err) throw err;
-
-            });
+            appendRand(movieName);
             findIt.movieFind(movieName.toLowerCase());
 
 
@@ -98,6 +97,18 @@ inquirer.prompt([
 
 })
 
+const checkInput = (input) => {
+    if(input === "movie-this") {
+        op = 1;
+    } else if(input = "spotify-this-song") {
+        op = 2;
+    } else if(input = "concert-this") {
+        op = 3;
+    } else {
+        op = 0;
+    }
+}
+
 
 var random = () => {
     fs.readFile("random.txt", "utf8", function (error, data) {
@@ -105,11 +116,29 @@ var random = () => {
         if (error) {
             return console.log(error);
         }
-        console.log(data);
 
-        var dataArr = data.split(",");
-        console.log(dataArr);
+        let dataArr = data.split(",");
 
+        let index = Math.floor(Math.random() * dataArr.length);
+        let index2 = index++;
+        let source = dataArr[index];
+        checkInput(source);
+        console.log(source);
+
+        if(op === 1) {
+            let term = dataArr[index2];
+            findIt.movieFind(term);
+            
+        } else if(op === 2){
+            let term = dataArr[index2];
+            findIt.concertFind(term);
+            
+        } else if ( op === 3) {
+            let term = dataArr[index2];
+            findIt.songFind(term);
+        } else {
+            dataArr.find();
+        }
     });
 }
 
@@ -135,10 +164,10 @@ var findIt = {
                     show: shows[i].datetime,
                     bands: shows[i].lineup.join(', '),
                     venue: shows[i].venue.name,
-                    loc: `${shows[i].venue.city}, ${shows[i].venue.region}, ${shows[i].venue.country}`
+                    loc: `${shows[i].venue.city}, ${shows[i].venue.region} ${shows[i].venue.country}`
                 };
                 console.log(divider);
-                console.log(`Date: ${showData.show}`);
+                console.log(`Date: ${moment().format(showData.show)}`);
                 console.log(`Venue name: ${showData.venue}`);
                 console.log(`Location: ${showData.loc}`);
                 console.log(`Lineup: ${showData.bands}`);
@@ -203,8 +232,20 @@ var findIt = {
                 return;
             }
             console.log(divider);
-            let showData = JSON.stringify(data.tracks);
-            console.log(showData);
+            let song = data.tracks.items[0];
+            let showData = {
+                artists: [],
+                title: song.name,
+                url: song.preview_url,
+                album: song.album.name
+            }
+            for(let i = 0; i < song.artists.length; i++) {
+                showData.artists.push(song.artists[i].name);
+            }
+            console.log(`Song Title: ${showData.title}`);
+            console.log(`Artist(s): ${showData.artists.join(", ")}`);
+            console.log(`Preview URL: ${showData.url}`);
+            console.log(`Album: ${showData.album}`);
 
             fs.appendFile("log.txt", showData, function (err) {
                 if (err) throw err;
@@ -219,14 +260,3 @@ var findIt = {
 
 
 
-// 3. To retrieve the data that will power this app, you'll need to send requests using the `axios` package to the Bands in Town, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
-
-//    * [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
-
-//    * [Axios](https://www.npmjs.com/package/axios)
-
-//      * You'll use Axios to grab data from the [OMDB API](http://www.omdbapi.com) and the [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
-
-//    * [Moment](https://www.npmjs.com/package/moment)
-
-//    * [DotEnv](https://www.npmjs.com/package/dotenv)
