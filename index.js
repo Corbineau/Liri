@@ -5,25 +5,55 @@ var spotify = require("node-spotify-api");
 var inquirer = require("inquirer");
 
 
+
 inquirer.prompt([
     {
-            type: "list",
-            message: "What are you looking for?",
-            choices: ["Band tour dates", "Song Information", ""],
-            name: "source"
+        type: "list",
+        message: "What are you looking for?",
+        choices: [
+            {
+                message: "Band tour dates",
+                name: "concert-this"
+            },
+            {
+                message: "Song Information",
+                name: "spotify-this-song",
+            },
+            { message: "Movie Information" },
+            { name: "Do-what-it-says!" },
+            { message: "Movie Information" },
+            { name: "Do-what-it-says!" }]
+        name: "source"
 
     }
 
-])
+]).then(function (response, err) {
+    if(response.source.name === "concert-this") {
 
-spotify.search({ type: `${type}`, query: `${songName}` }, function (err, data) {
-    if (err) {
-        console.log('Error occurred: ' + err);
-        return;
-    }
+    } else if (response.source.name === "spotify-this-song") {
+        inquirer.prompt([
+            {
+                type: "input",
+                message: "What song are you searching for?",
+                name: "song"
+            }        
+        ]).then(function(response) {
+            var songName = response.song;
+            spotify.search({ type: `track`, query: `${songName}` }, function (err, data) {
+                if (err) {
+                    console.log(`Error occurred: ${err}`);
+                    return;
+                }
+            console.log(data);
+                
+            });
 
-    // Do something with 'data'
-});
+        })
+    } else if ()
+
+})
+
+
 
 var findInAxios = (source, ) => {
     if (something);
