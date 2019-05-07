@@ -2,12 +2,13 @@
 require("dotenv").config();
 var keys = require("./keys.js");
 var axios = require("axios");
-var spotify = require("node-spotify-api");
+var Spotify = require("node-spotify-api");
 var inquirer = require("inquirer");
 var moment = require('moment');
 var fs = require("fs");
+var spotify = new Spotify(keys.spotify);
 
-
+var divider = `\n--------------------------\n`
 
 inquirer.prompt([
     {
@@ -45,7 +46,7 @@ inquirer.prompt([
         ]).then(function (response) {
             var bandName = response.band;
             findIt.concertFind(bandName);
-        
+
         })
 
     } else if (response.source === "spotify-this-song") {
@@ -69,13 +70,25 @@ inquirer.prompt([
             }
         ]).then(function (response) {
             var movieName = response.movie;
+            console.log(movieName);
             findIt.movieFind(movieName);
+
 
         })
     } else {
-        // fs.readFile("random.txt") 
+        fs.readFile("random.txt", "utf8", function(error, data) {
+
+        if (error) {
+            return console.log(error);
+        }
+        console.log(data);
+
+        var dataArr = data.split(",");
+        console.log(dataArr);
+
+    });
         //     findIt.songFind();
-        
+
     }
 
 })
@@ -83,47 +96,73 @@ inquirer.prompt([
 
 
 var findIt = {
-    
-    concertFind: function(bandName) {
-        axios.get(`https://rest.bandsintown.com/artists/${bandName}events?app_id=codingbootcamp`, function (err, data) {
-                if (err) {
-                    console.log(`Error occurred: ${err}`);
-                    return;
-                }
-                console.log(data);
-                fs.appendFile("log.txt", data, function(err) {
-                    if (err) throw err;
-    
-                });
+
+    concertFind: function (bandName) {
+        let url = `https://rest.bandsintown.com/artists/${bandName}/events?app_id=codingbootcamp`;
+        console.log(url);
+        axios.get(url, function (err, data) {
+            if (err) {
+                console.log(`Error occurred: ${err}`);
+                return;
+            }
+            console.log(divider);
+            console.log(data);
+            // let showData = {
+            //     venue: data.venue,
+            //     location: 
+
+
+            // }
+
+            fs.appendFile("log.txt", showData, function (err) {
+                if (err) throw err;
 
             });
 
+        });
+
     },
-    
-    movieFind: function(movieName) {
-        axios.get(`http://www.omdbapi.com/?t=${movieName}&y=&plot=short&apikey=trilogy`, function (err, data) {
-                if (err) {
-                    console.log(`Error occurred: ${err}`);
-                    return;
-                }
-                console.log(data);
-                fs.appendFile("log.txt", data, function(err) {
-                    if (err) throw err;
-    
-                });
+
+    movieFind: function (movieName) {
+        let url = `http://www.omdbapi.com/?t=${movieName}&y=&plot=short&apikey=trilogy`;
+        console.log(url);
+        axios.get(url, function (err, response) {
+            if (err) {
+                console.log(`Error occurred: ${err}`);
+                fs.appendFile("log.txt", err)
+                return;
+            }
+            console.log(response.data);
+            let showData = {
+                title: response.data.Title,
+                year: response.data.Year,
+            }
+            console.log(divider);
+            console.log(
+                showData.title,
+                showData.year
+            );
+
+            fs.appendFile("log.txt", showData, function (err) {
+                if (err) throw err;
 
             });
 
+        });
+
     },
 
-    songFind: function(songName) {
+    songFind: function (songName) {
         spotify.search({ type: `track`, query: `${songName}` }, function (err, data) {
             if (err) {
                 console.log(`Error occurred: ${err}`);
                 return;
             }
-            console.log(data);
-            fs.appendFile("log.txt", data, function(err) {
+            console.log(divider);
+            let showData = JSON.stringify(data);
+            console.log(showData);
+
+            fs.appendFile("log.txt", showData, function (err) {
                 if (err) throw err;
 
             });
