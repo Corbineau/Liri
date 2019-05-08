@@ -6,7 +6,7 @@ Search for Movies, Songs, Concert dates, or any of these randomly with Liri!
 
 ## How it works
 
-1. Enter node liri.js
+1. Enter 'node index.js'
 
 2. A prompt will appear allowing the user to select an option from a list
 
@@ -16,6 +16,9 @@ Search for Movies, Songs, Concert dates, or any of these randomly with Liri!
 
 4. Then results display!
 
+5. selecting "Do what it says!" chooses an option from a text file, and supplies the random result.
+
+6. When finished, liri will ask if you'd like to search again.
+
 ## Known issues
 
-* the isBlank validate function will not allow the user to continue.

@@ -529,3 +529,54 @@
  query: Tonight Tonight 
 
  {"artists":["Brett Young"],"title":"Here Tonight","url":null,"album":"Ticket To L.A."}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Parliament/events?app_id=codingbootcamp 
+
+ 
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Amanda Palmer/events?app_id=codingbootcamp 
+
+ [object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]

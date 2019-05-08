@@ -1,4 +1,4 @@
-
+#! /usr/bin/env node
 require("dotenv").config();
 var keys = require("./keys.js");
 var axios = require("axios");
@@ -189,7 +189,6 @@ const askAgain = () => {
 
 var findIt = {
 
-    isDone: false,
 
     concertFind: function (bandName) {
         console.log(divider);
@@ -205,13 +204,13 @@ var findIt = {
             let allDates = [];
             for (let i = 0; i < shows.length; i++) {
                 let showData = {
-                    show: shows[i].datetime,
+                    date: moment(shows[i].datetime),
                     bands: shows[i].lineup.join(', '),
                     venue: shows[i].venue.name,
                     loc: `${shows[i].venue.city}, ${shows[i].venue.region} ${shows[i].venue.country}`
                 };
                 console.log(divider);
-                console.log(`Date: ${moment().format(showData.show)}`);
+                console.log(`Date: ${showData.date}`);
                 console.log(`Venue name: ${showData.venue}`);
                 console.log(`Location: ${showData.loc}`);
                 console.log(`Lineup: ${showData.bands}`);
