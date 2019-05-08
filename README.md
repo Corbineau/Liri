@@ -6,7 +6,7 @@ Search for Movies, Songs, Concert dates, or any of these randomly with Liri!
 
 ## How it works
 
-1. Enter 'node index.js'
+1. Enter 'liri' into the command line and press enter.
 
 2. A prompt will appear allowing the user to select an option from a list
 

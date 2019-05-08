@@ -156,13 +156,13 @@ var random = () => {
         if ((index === 0) || (isEven(index))) {
             let source = dataArr[index];
             let term = dataArr[index2];
-            // console.log("I should be even ", source, term);
+            console.log("I should be even ", source, term);
             runSearch(source, term);
 
         } else {
             let source = dataArr[index2];
             let term = dataArr[index];
-            // console.log("I should be odd ", source, term);
+            console.log("I should be odd ", source, term);
             runSearch(source, term);
         }
 
@@ -180,6 +180,7 @@ const askAgain = () => {
         }
     ]).then(function (response) {
         if (response.ask_again) {
+            findIt.response = "";
             liriAsk();
         } else {
             console.log("Thanks for using Liri! Goodbye!");
@@ -189,17 +190,25 @@ const askAgain = () => {
 
 var findIt = {
 
+    response: "",
+
+    logIt: function(message, url) {
+        fs.appendFile("log.txt", `${divider}\n query: ${url} \n\n ${message}`, function (err) {
+            if (err) throw err;
+        });
+    },
 
     concertFind: function (bandName) {
         console.log(divider);
         console.log(`Searching for tour dates for ${bandName}...`);
         let url = `https://rest.bandsintown.com/artists/${bandName}/events?app_id=codingbootcamp`;
-        axios.get(url, function (err) {
+        axios.get(url)
+        .catch(function (err) {
             if (err) {
-                console.log(`Error occurred: ${err}`);
+                findIt.response = `Error occurred: ${err}`;
+                findIt.logIt(findIt.response, url);
                 return;
-            }
-        }).then(function (response) {
+            }}).then(function (response) {
             let shows = response.data;
             let allDates = [];
             for (let i = 0; i < shows.length; i++) {
@@ -214,13 +223,22 @@ var findIt = {
                 console.log(`Venue name: ${showData.venue}`);
                 console.log(`Location: ${showData.loc}`);
                 console.log(`Lineup: ${showData.bands}`);
-                allDates.push(showData);    
+                findIt.logIt(JSON.stringify(showData), url);
+                allDates.push(showData);   
             }
             return allDates;
+        }).catch(function(err) {
+            return console.log(`something went wrong: ${err}`)
         }).then(function (allDates) {
-            fs.appendFile("log.txt", `${divider}\n query: ${url} \n\n ${allDates.join('\n')}`, function (err) {
-                if (err) throw err;
-            });
+            
+            if(!allDates[0]){
+                findIt.response = "No results found."
+                console.log(findIt.response);
+            } else {
+                findIt.response = allDates;
+                console.log(`total dates found: ${allDates.length}`);
+            }
+            
             askAgain();
         });
     },
@@ -259,10 +277,16 @@ var findIt = {
             console.log(`Plot: ${showData.plot}`);
             console.log(`Actors: ${showData.actors}`);
             return showData
+        }).catch(function(err) {
+            return console.log(`something went wrong: ${err}`)
         }).then(function (showData) {
-            fs.appendFile("log.txt", `${divider}\n query: ${url} \n\n ${JSON.stringify(showData)}`, function (err) {
-                if (err) throw err;
-            });
+            if(!showData){
+                findIt.response = "No results found."
+                console.log(findIt.response);
+            } else {
+                findIt.response = showData;
+            }
+            findIt.logIt(JSON.stringify(findIt.response), url);
             askAgain();
         },
         );
@@ -295,9 +319,13 @@ var findIt = {
             console.log(`Album: ${showData.album}`);
             let cheater = Promise.resolve();
             cheater.then(function () {
-                fs.appendFile("log.txt", `${divider}\n query: ${songName} \n\n ${JSON.stringify(showData)}`, function (err) {
-                    if (err) throw err;
-                })
+                if(!showData){
+                    findIt.response = "No results found."
+                    console.log(findIt.response);
+                } else {
+                    findIt.response = showData;
+                }
+                findIt.logIt(JSON.stringify(findIt.response), songName);
                 askAgain();
             }
             )
