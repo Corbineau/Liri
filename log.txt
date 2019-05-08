@@ -945,3 +945,773 @@
  query: https://rest.bandsintown.com/artists/Parliament Funkadelic/events?app_id=codingbootcamp 
 
  {"date":"2019-05-31T23:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Aragon Ballroom","loc":"Chicago, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-10T23:00:21.000Z","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-01T23:00:01.000Z","bands":"Neko Case, Brandi Carlile, Emmy Lou Harris","venue":"Gorge Amphitheatre","loc":"George, WA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-20T01:00:00.000Z","bands":"Neko Case","venue":"CINEMA SÃO JORGE - Sala Manoel de Oliveira","loc":"Lisboa,  Portugal"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T12:00:00.000Z","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-23T12:00:00.000Z","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-21T23:00:08.000Z","bands":"Neko Case","venue":"Black Deer Festival (June 21-23)","loc":"Kent,  United Kingdom"}
+--------------------------
+
+ query: this is america 
+
+ {"artists":["Childish Gambino"],"title":"This Is America","url":"https://p.scdn.co/mp3-preview/01afc9c7c44d7b4b01d2340a00e586031827b243?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"This Is America"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=Black panther&y=&plot=short&apikey=trilogy 
+
+ {"title":"Black Panther","year":"2018","imdb":"7.3/10","rtr":"97%","lang":"English, Swahili, Nama, Xhosa, Korean","country":"USA, South Africa, South Korea, Australia","plot":"T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.","actors":"Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/No Matter What You Do/events?app_id=codingbootcamp 
+
+ Error occurred: Error: Request failed with status code 404
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-24T14:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Three Sisters Park","loc":"Chillicothe, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-01T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Riverfront Live","loc":"Cincinnati, Ohio United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-31T23:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Aragon Ballroom","loc":"Chicago, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-04T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Central Park Summerstage at Rumsey Playfield","loc":"New York, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-30T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Miller High Life Theatre","loc":"Milwaukee, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-07T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Franklin Music Hall","loc":"Philadelphia, PA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Artpark","loc":"Lewiston, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-20T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Michigan Lottery Amphitheatre at Freedom Hill","loc":"Sterling Heights, MI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-26T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Municipal Auditorium","loc":"Nashville, TN United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Greek Theatre","loc":"Los Angeles, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Mountain Winery","loc":"Saratoga, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-04T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Thunder Valley Casino & Resort","loc":"Lincoln, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-08T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revolution Concert House","loc":"Garden City, ID United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-10T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Oregon Zoo Amphitheater","loc":"Portland, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Sylvee","loc":"Madison, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Cuthbert Amphitheater","loc":"Eugene, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Crossroads KC","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-16T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Mission Ballroom","loc":"Denver, CO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-27T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Greensboro Coliseum Complex","loc":"Greensboro, NC United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-17T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Celebrity Theatre","loc":"Phoenix, AZ United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-18T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Brooklyn Bowl","loc":"Las Vegas, NV United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"H-E-B Center at Cedar Park","loc":"Cedar Park, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Aztec Theatre","loc":"San Antonio, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Bomb Factory","loc":"Dallas, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revention Music Center","loc":"Houston, TX United States"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=black Panther&y=&plot=short&apikey=trilogy 
+
+ {"title":"Black Panther","year":"2018","imdb":"7.3/10","rtr":"97%","lang":"English, Swahili, Nama, Xhosa, Korean","country":"USA, South Africa, South Korea, Australia","plot":"T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.","actors":"Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=No Matter What You Do&y=&plot=short&apikey=trilogy 
+
+ "No results found."
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-24T14:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Three Sisters Park","loc":"Chillicothe, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-04T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Central Park Summerstage at Rumsey Playfield","loc":"New York, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-07T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Franklin Music Hall","loc":"Philadelphia, PA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-01T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Riverfront Live","loc":"Cincinnati, Ohio United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-20T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Michigan Lottery Amphitheatre at Freedom Hill","loc":"Sterling Heights, MI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Sylvee","loc":"Madison, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Crossroads KC","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-26T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Municipal Auditorium","loc":"Nashville, TN United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-27T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Greensboro Coliseum Complex","loc":"Greensboro, NC United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-31T23:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Aragon Ballroom","loc":"Chicago, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Mountain Winery","loc":"Saratoga, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-04T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Thunder Valley Casino & Resort","loc":"Lincoln, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-08T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revolution Concert House","loc":"Garden City, ID United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Artpark","loc":"Lewiston, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Cuthbert Amphitheater","loc":"Eugene, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-16T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Mission Ballroom","loc":"Denver, CO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-17T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Celebrity Theatre","loc":"Phoenix, AZ United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-18T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Brooklyn Bowl","loc":"Las Vegas, NV United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"H-E-B Center at Cedar Park","loc":"Cedar Park, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Aztec Theatre","loc":"San Antonio, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Bomb Factory","loc":"Dallas, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Greek Theatre","loc":"Los Angeles, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-10T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Oregon Zoo Amphitheater","loc":"Portland, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revention Music Center","loc":"Houston, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-30T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Miller High Life Theatre","loc":"Milwaukee, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-24T14:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Three Sisters Park","loc":"Chillicothe, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-30T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Miller High Life Theatre","loc":"Milwaukee, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-07T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Franklin Music Hall","loc":"Philadelphia, PA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Artpark","loc":"Lewiston, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-20T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Michigan Lottery Amphitheatre at Freedom Hill","loc":"Sterling Heights, MI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Sylvee","loc":"Madison, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-31T23:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Aragon Ballroom","loc":"Chicago, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-26T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Municipal Auditorium","loc":"Nashville, TN United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-27T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Greensboro Coliseum Complex","loc":"Greensboro, NC United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Greek Theatre","loc":"Los Angeles, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Mountain Winery","loc":"Saratoga, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-04T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Thunder Valley Casino & Resort","loc":"Lincoln, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-08T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revolution Concert House","loc":"Garden City, ID United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-10T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Oregon Zoo Amphitheater","loc":"Portland, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Cuthbert Amphitheater","loc":"Eugene, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-16T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Mission Ballroom","loc":"Denver, CO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-17T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Celebrity Theatre","loc":"Phoenix, AZ United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-18T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Brooklyn Bowl","loc":"Las Vegas, NV United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"H-E-B Center at Cedar Park","loc":"Cedar Park, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Aztec Theatre","loc":"San Antonio, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Bomb Factory","loc":"Dallas, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revention Music Center","loc":"Houston, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-04T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Central Park Summerstage at Rumsey Playfield","loc":"New York, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-01T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Riverfront Live","loc":"Cincinnati, Ohio United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Crossroads KC","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-24T14:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Three Sisters Park","loc":"Chillicothe, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-01T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Riverfront Live","loc":"Cincinnati, Ohio United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-31T23:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Aragon Ballroom","loc":"Chicago, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-07T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Franklin Music Hall","loc":"Philadelphia, PA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-04T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Central Park Summerstage at Rumsey Playfield","loc":"New York, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-30T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Miller High Life Theatre","loc":"Milwaukee, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Sylvee","loc":"Madison, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Crossroads KC","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-26T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Municipal Auditorium","loc":"Nashville, TN United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-20T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Michigan Lottery Amphitheatre at Freedom Hill","loc":"Sterling Heights, MI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Mountain Winery","loc":"Saratoga, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-04T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Thunder Valley Casino & Resort","loc":"Lincoln, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-08T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revolution Concert House","loc":"Garden City, ID United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-10T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Oregon Zoo Amphitheater","loc":"Portland, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Cuthbert Amphitheater","loc":"Eugene, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-16T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Mission Ballroom","loc":"Denver, CO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-17T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Celebrity Theatre","loc":"Phoenix, AZ United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-18T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Brooklyn Bowl","loc":"Las Vegas, NV United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"H-E-B Center at Cedar Park","loc":"Cedar Park, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Artpark","loc":"Lewiston, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Bomb Factory","loc":"Dallas, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revention Music Center","loc":"Houston, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Aztec Theatre","loc":"San Antonio, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-27T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Greensboro Coliseum Complex","loc":"Greensboro, NC United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Greek Theatre","loc":"Los Angeles, CA United States"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=black Panther&y=&plot=short&apikey=trilogy 
+
+ {"title":"Black Panther","year":"2018","imdb":"7.3/10","rtr":"97%","lang":"English, Swahili, Nama, Xhosa, Korean","country":"USA, South Africa, South Korea, Australia","plot":"T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.","actors":"Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-10T23:00:21.000Z","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-01T23:00:01.000Z","bands":"Neko Case, Brandi Carlile, Emmy Lou Harris","venue":"Gorge Amphitheatre","loc":"George, WA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-21T23:00:08.000Z","bands":"Neko Case","venue":"Black Deer Festival (June 21-23)","loc":"Kent,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T12:00:00.000Z","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-20T01:00:00.000Z","bands":"Neko Case","venue":"CINEMA SÃO JORGE - Sala Manoel de Oliveira","loc":"Lisboa,  Portugal"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-23T12:00:00.000Z","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: this is america 
+
+ {"artists":["Childish Gambino"],"title":"This Is America","url":"https://p.scdn.co/mp3-preview/01afc9c7c44d7b4b01d2340a00e586031827b243?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"This Is America"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=the matrix&y=&plot=short&apikey=trilogy 
+
+ {"title":"The Matrix","year":"1999","imdb":"8.7/10","rtr":"88%","lang":"English","country":"USA","plot":"A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.","actors":"Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-24T14:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Three Sisters Park","loc":"Chillicothe, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-30T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Miller High Life Theatre","loc":"Milwaukee, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-01T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Riverfront Live","loc":"Cincinnati, Ohio United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-05-31T23:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Aragon Ballroom","loc":"Chicago, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Artpark","loc":"Lewiston, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-20T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Michigan Lottery Amphitheatre at Freedom Hill","loc":"Sterling Heights, MI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-04T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Central Park Summerstage at Rumsey Playfield","loc":"New York, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Crossroads KC","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-27T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Greensboro Coliseum Complex","loc":"Greensboro, NC United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-22T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Sylvee","loc":"Madison, WI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Mountain Winery","loc":"Saratoga, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-04T21:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Thunder Valley Casino & Resort","loc":"Lincoln, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-08T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revolution Concert House","loc":"Garden City, ID United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-10T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Oregon Zoo Amphitheater","loc":"Portland, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-11T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"The Cuthbert Amphitheater","loc":"Eugene, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-16T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Mission Ballroom","loc":"Denver, CO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-17T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Celebrity Theatre","loc":"Phoenix, AZ United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-18T22:30:00.000Z","bands":"Parliament-Funkadelic","venue":"Brooklyn Bowl","loc":"Las Vegas, NV United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"H-E-B Center at Cedar Park","loc":"Cedar Park, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-23T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Aztec Theatre","loc":"San Antonio, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Bomb Factory","loc":"Dallas, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-25T23:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Revention Music Center","loc":"Houston, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-06-07T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Franklin Music Hall","loc":"Philadelphia, PA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-08-03T00:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Greek Theatre","loc":"Los Angeles, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/parliament funkadelic/events?app_id=codingbootcamp 
+
+ {"date":"2019-07-26T22:00:00.000Z","bands":"Parliament-Funkadelic","venue":"Municipal Auditorium","loc":"Nashville, TN United States"}

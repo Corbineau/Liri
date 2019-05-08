@@ -134,11 +134,13 @@ const liriAsk = () => {
                 appendRand(query);
                 runSearch(search, query);
             } else {
-                return console.log("something went wrong");
+                return err
             }
 
         }
 
+    }).catch(function(err){
+        console.log(`something went wrong: ${err}`);
     })
 }
 
@@ -150,19 +152,21 @@ var random = () => {
         }
 
         let dataArr = data.split(",");
-        let index = Math.floor(Math.random() * (dataArr.length - 1));
-        let index2 = (index + 1);
-
-        if ((index === 0) || (isEven(index))) {
+        let index = Math.floor(Math.random() * Math.floor((dataArr.length - 1)));
+        
+        if((index === 0) || (isEven(index))) {
+            let index2 = (index + 1);
             let source = dataArr[index];
             let term = dataArr[index2];
-            console.log("I should be even ", source, term);
+            // console.log("I should be even ", source, term);
             runSearch(source, term);
 
         } else {
+            let index2 = (index - 1);
             let source = dataArr[index2];
             let term = dataArr[index];
-            console.log("I should be odd ", source, term);
+            // console.log(index, index2);
+            // console.log("I should be odd ", source, term);
             runSearch(source, term);
         }
 
