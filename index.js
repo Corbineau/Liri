@@ -13,6 +13,7 @@ var divider = `\n--------------------------\n`
 const doMovie = "movie-this";
 const doSong = "spotify-this-song";
 const doConcert = "concert-this";
+const doRandom = "do-what-it-says";
 
 const appendRand = (cont) => {
     fs.appendFile("random.txt", `${cont},`, function (err) {
@@ -20,6 +21,38 @@ const appendRand = (cont) => {
 
     });
 }
+
+const isEven = (num) => {
+    if (num % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+const isBlank = (val) => {
+    if (!val) {
+        return "You cannot submit a blank value."
+    } else {
+        return true;
+    }
+}
+
+const runSearch = (source, term) => {
+    if (source === doMovie) {
+
+        findIt.movieFind(term);
+
+    } else if (source === doConcert) {
+
+        findIt.concertFind(term);
+
+    } else if (source === doSong) {
+        findIt.songFind(term);
+    }
+
+}
+
 
 inquirer.prompt([
     {
@@ -40,83 +73,71 @@ inquirer.prompt([
             },
             {
                 name: "Do What It Says!",
-                value: "Do-what-it-says"
+                value: "do-what-it-says"
             }],
         name: "source"
 
+    },
+    {
+        type: "input",
+        message: "What band would you like to see?",
+        name: "band",
+        default: "Neko Case",
+        when: function(response) {
+            if(response.source === doConcert) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        validate: isBlank
+    },
+    {
+        type: "input",
+        message: "What song are you searching for?",
+        name: "song",
+        default: "No Matter What You Do",
+        when: function(response) {
+            if(response.source === doSong) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        validate: isBlank
+    },
+    {
+        type: "input",
+        message: "What movie are you searching for?",
+        name: "movie",
+        default: "Being There",
+        when: function(response) {
+            if(response.source === doMovie) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        validate: isBlank
     }
 
 ]).then(function (response) {
-    if (response.source === doConcert) {
-        appendRand(response.source);
-        inquirer.prompt([
-            {
-                type: "input",
-                message: "What band would you like to see?",
-                name: "band",
-                default: "Neko Case",
-                validate: isBlank
-            }
-        ]).then(function (response) {
-            var bandName = response.band;
-            findIt.concertFind(bandName);
-
-        })
-
-    } else if (response.source === doSong) {
-        appendRand(response.source);
-        inquirer.prompt([
-            {
-                type: "input",
-                message: "What song are you searching for?",
-                name: "song",
-                default: "No Matter What You Do",
-                validate: isBlank
-            }
-        ]).then(function (response) {
-            var songName = response.song;
-            findIt.songFind(songName);
-
-        })
-    } else if (response.source === doMovie) {
-        appendRand(response.source);
-        inquirer.prompt([
-            {
-                type: "input",
-                message: "What movie are you searching for?",
-                name: "movie",
-                default: "Being There",
-                validate: isBlank
-            }
-        ]).then(function (response) {
-            var movieName = response.movie;
-            findIt.movieFind(movieName);
-
-
-        })
-    } else {
-
+    if(response.source === doRandom) {
         random();
-
+    } else {
+        let search = response.source;
+        let query = response.band || response.song || response.movie;
+        if(query) {
+            appendRand(search);
+            appendRand(query);
+            runSearch(search, query);
+        } else {
+            console.log("something went wrong");
+        }
+        
     }
-
+    
 })
-
-const isEven = (num) => {
-    if (num % 2 == 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-const isBlank = (val) => {
-    if(!val) {
-        return "You cannot submit a blank value."
-    } else {
-        return true; 
-}
-}
 
 
 var random = () => {
@@ -127,34 +148,26 @@ var random = () => {
         }
 
         let dataArr = data.split(",");
-        let index = Math.floor(Math.random() * dataArr.length);
-
+        let index = Math.floor(Math.random() * dataArr.length -1);
+        let index2 = index++;
+        console.log(index, index2);
 
         if ((index === 0) || (isEven(index))) {
-            let index2 = index++;
             let source = dataArr[index];
             let term = dataArr[index2];
-            console.log(source, term);
-            if (source === doMovie) {
-
-                findIt.movieFind(term);
-
-            } else if (source === doConcert) {
-                let term = dataArr[index2];
-                findIt.concertFind(term);
-
-            } else if (source === doSong) {
-                let term = dataArr[index2];
-                findIt.songFind(term);
-            } else {
-
-            }
+            console.log("I should be even ", source, term);
+            runSearch(source,term);
 
         } else {
-
+            let source = dataArr[index2];
+            let term = dataArr[index];
+            console.log("I should be odd ", source, term);
+            runSearch(source,term);
         }
+        
     }
-    )}
+    );
+}
 
 
 var findIt = {
@@ -163,7 +176,6 @@ var findIt = {
         console.log(divider);
         console.log(`Searching for tour dates for ${bandName}...`);
         let url = `https://rest.bandsintown.com/artists/${bandName}/events?app_id=codingbootcamp`;
-        console.log(url);
         axios.get(url, function (err) {
             if (err) {
                 console.log(`Error occurred: ${err}`);
@@ -185,7 +197,7 @@ var findIt = {
                 console.log(`Venue name: ${showData.venue}`);
                 console.log(`Location: ${showData.loc}`);
                 console.log(`Lineup: ${showData.bands}`);
-                appendRand(bandName);
+                
                 fs.appendFile("log.txt", `${divider}\n query: ${url} \n\n ${JSON.stringify(showData)}`, function (err) {
                     if (err) throw err;
 
@@ -228,7 +240,7 @@ var findIt = {
             console.log(`Language: ${showData.lang}`);
             console.log(`Plot: ${showData.plot}`);
             console.log(`Actors: ${showData.actors}`);
-            appendRand(movieName);
+            
             fs.appendFile("log.txt", `${divider}\n query: ${url} \n\n ${JSON.stringify(showData)}`, function (err) {
                 if (err) throw err;
 
@@ -261,8 +273,8 @@ var findIt = {
             console.log(`Artist(s): ${showData.artists.join(", ")}`);
             console.log(`Preview URL: ${showData.url}`);
             console.log(`Album: ${showData.album}`);
-            appendRand(songName);
-            fs.appendFile("log.txt", `${divider}\n query: ${url} \n\n ${JSON.stringify(showData)}`, function (err) {
+            
+            fs.appendFile("log.txt", `${divider}\n query: ${songName} \n\n ${JSON.stringify(showData)}`, function (err) {
                 if (err) throw err;
 
             });

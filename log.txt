@@ -42,3 +42,143 @@
  query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
 
  {"show":"2019-06-22T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-10T19:00:21","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-01T19:00:01","bands":"Neko Case, Brandi Carlile, Emmy Lou Harris","venue":"Gorge Amphitheatre","loc":"George, WA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-19T21:00:00","bands":"Neko Case","venue":"CINEMA SÃO JORGE - Sala Manoel de Oliveira","loc":"Lisboa,  Portugal"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-21T19:00:08","bands":"Neko Case","venue":"Black Deer Festival (June 21-23)","loc":"Kent,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-07T19:00:03","bands":"Neko Case","venue":"Winspear Centre","loc":"Edmonton,  Canada"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-23T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-22T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=Being There&y=&plot=short&apikey=trilogy 
+
+ {"title":"Being There","year":"1979","imdb":"8.0/10","rtr":"96%","lang":"English, Russian, Italian","country":"USA, West Germany","plot":"A simple, sheltered gardener becomes an unlikely trusted advisor to a powerful businessman and an insider in Washington politics.","actors":"Peter Sellers, Shirley MacLaine, Melvyn Douglas, Jack Warden"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-10T19:00:21","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-19T21:00:00","bands":"Neko Case","venue":"CINEMA SÃO JORGE - Sala Manoel de Oliveira","loc":"Lisboa,  Portugal"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-22T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-23T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-01T19:00:01","bands":"Neko Case, Brandi Carlile, Emmy Lou Harris","venue":"Gorge Amphitheatre","loc":"George, WA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-07T19:00:03","bands":"Neko Case","venue":"Winspear Centre","loc":"Edmonton,  Canada"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-21T19:00:08","bands":"Neko Case","venue":"Black Deer Festival (June 21-23)","loc":"Kent,  United Kingdom"}
+--------------------------
+
+ query: Killing me softly 
+
+ {"artists":["Fugees"],"title":"Killing Me Softly With His Song","url":"https://p.scdn.co/mp3-preview/c8fef7f0c42941f08e11854ef261df937a37e177?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"The Score"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-10T19:00:21","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-22T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-23T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-19T21:00:00","bands":"Neko Case","venue":"CINEMA SÃO JORGE - Sala Manoel de Oliveira","loc":"Lisboa,  Portugal"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-01T19:00:01","bands":"Neko Case, Brandi Carlile, Emmy Lou Harris","venue":"Gorge Amphitheatre","loc":"George, WA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-21T19:00:08","bands":"Neko Case","venue":"Black Deer Festival (June 21-23)","loc":"Kent,  United Kingdom"}
+--------------------------
+
+ query: Killing me softly 
+
+ {"artists":["Fugees"],"title":"Killing Me Softly With His Song","url":"https://p.scdn.co/mp3-preview/c8fef7f0c42941f08e11854ef261df937a37e177?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"The Score"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=Being There&y=&plot=short&apikey=trilogy 
+
+ {"title":"Being There","year":"1979","imdb":"8.0/10","rtr":"96%","lang":"English, Russian, Italian","country":"USA, West Germany","plot":"A simple, sheltered gardener becomes an unlikely trusted advisor to a powerful businessman and an insider in Washington politics.","actors":"Peter Sellers, Shirley MacLaine, Melvyn Douglas, Jack Warden"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=Tomorrow never dies&y=&plot=short&apikey=trilogy 
+
+ {"title":"Tomorrow Never Dies","year":"1997","imdb":"6.5/10","rtr":"58%","lang":"English, German, Danish, Mandarin, Cantonese","country":"UK, USA","plot":"James Bond heads to stop a media mogul's plan to induce war between China and the UK in order to obtain exclusive global media coverage.","actors":"Pierce Brosnan, Jonathan Pryce, Michelle Yeoh, Teri Hatcher"}
