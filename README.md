@@ -20,5 +20,5 @@ Search for Movies, Songs, Concert dates, or any of these randomly with Liri!
 
 6. When finished, liri will ask if you'd like to search again.
 
-## Known issues
-
+view the asciicast resording below:
+[![asciicast](https://asciinema.org/a/AFY1EoEVLay1K9tBK6RLKMhic.svg)](https://asciinema.org/a/AFY1EoEVLay1K9tBK6RLKMhic)
