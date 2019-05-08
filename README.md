@@ -10,8 +10,6 @@ Search for Movies, Songs, Concert dates, or any of these randomly with Liri!
 
 2. A prompt will appear allowing the user to select an option from a list
 
-    ![the choices]()
-
 3. Once an option is selected, the user can input a search matching the type of query.
 
 4. Then results display!
