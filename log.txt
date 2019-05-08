@@ -182,3 +182,350 @@
  query: https://www.omdbapi.com/?t=Tomorrow never dies&y=&plot=short&apikey=trilogy 
 
  {"title":"Tomorrow Never Dies","year":"1997","imdb":"6.5/10","rtr":"58%","lang":"English, German, Danish, Mandarin, Cantonese","country":"UK, USA","plot":"James Bond heads to stop a media mogul's plan to induce war between China and the UK in order to obtain exclusive global media coverage.","actors":"Pierce Brosnan, Jonathan Pryce, Michelle Yeoh, Teri Hatcher"}
+--------------------------
+
+ query: Killing me softly 
+
+ {"artists":["Fugees"],"title":"Killing Me Softly With His Song","url":"https://p.scdn.co/mp3-preview/c8fef7f0c42941f08e11854ef261df937a37e177?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"The Score"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=Being There&y=&plot=short&apikey=trilogy 
+
+ {"title":"Being There","year":"1979","imdb":"8.0/10","rtr":"96%","lang":"English, Russian, Italian","country":"USA, West Germany","plot":"A simple, sheltered gardener becomes an unlikely trusted advisor to a powerful businessman and an insider in Washington politics.","actors":"Peter Sellers, Shirley MacLaine, Melvyn Douglas, Jack Warden"}
+--------------------------
+
+ query: Neko Case 
+
+ {"artists":["Neko Case"],"title":"I Wish I Was the Moon","url":"https://p.scdn.co/mp3-preview/3ebbf61b7f89e576d7a435e9b6a08d19a64f4059?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Blacklisted"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=Tomorrow never dies&y=&plot=short&apikey=trilogy 
+
+ {"title":"Tomorrow Never Dies","year":"1997","imdb":"6.5/10","rtr":"58%","lang":"English, German, Danish, Mandarin, Cantonese","country":"UK, USA","plot":"James Bond heads to stop a media mogul's plan to induce war between China and the UK in order to obtain exclusive global media coverage.","actors":"Pierce Brosnan, Jonathan Pryce, Michelle Yeoh, Teri Hatcher"}
+--------------------------
+
+ query: Killing me softly 
+
+ {"artists":["Fugees"],"title":"Killing Me Softly With His Song","url":"https://p.scdn.co/mp3-preview/c8fef7f0c42941f08e11854ef261df937a37e177?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"The Score"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=Being There&y=&plot=short&apikey=trilogy 
+
+ {"title":"Being There","year":"1979","imdb":"8.0/10","rtr":"96%","lang":"English, Russian, Italian","country":"USA, West Germany","plot":"A simple, sheltered gardener becomes an unlikely trusted advisor to a powerful businessman and an insider in Washington politics.","actors":"Peter Sellers, Shirley MacLaine, Melvyn Douglas, Jack Warden"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-10T19:00:21","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-10T19:00:21","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-10T19:00:21","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-01T19:00:01","bands":"Neko Case, Brandi Carlile, Emmy Lou Harris","venue":"Gorge Amphitheatre","loc":"George, WA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-23T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-21T19:00:08","bands":"Neko Case","venue":"Black Deer Festival (June 21-23)","loc":"Kent,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-22T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-19T21:00:00","bands":"Neko Case","venue":"CINEMA SÃO JORGE - Sala Manoel de Oliveira","loc":"Lisboa,  Portugal"}
+--------------------------
+
+ query: Tonight Tonight 
+
+ {"artists":["Brett Young"],"title":"Here Tonight","url":null,"album":"Ticket To L.A."}
+--------------------------
+
+ query: tonight,tonight 
+
+ {"artists":["Brett Young"],"title":"Here Tonight","url":null,"album":"Ticket To L.A."}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-10T19:00:21","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-19T21:00:00","bands":"Neko Case","venue":"CINEMA SÃO JORGE - Sala Manoel de Oliveira","loc":"Lisboa,  Portugal"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-22T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-01T19:00:01","bands":"Neko Case, Brandi Carlile, Emmy Lou Harris","venue":"Gorge Amphitheatre","loc":"George, WA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-21T19:00:08","bands":"Neko Case","venue":"Black Deer Festival (June 21-23)","loc":"Kent,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-23T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://www.omdbapi.com/?t=Being There&y=&plot=short&apikey=trilogy 
+
+ {"title":"Being There","year":"1979","imdb":"8.0/10","rtr":"96%","lang":"English, Russian, Italian","country":"USA, West Germany","plot":"A simple, sheltered gardener becomes an unlikely trusted advisor to a powerful businessman and an insider in Washington politics.","actors":"Peter Sellers, Shirley MacLaine, Melvyn Douglas, Jack Warden"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-10T19:00:21","bands":"Neko Case","venue":"Uptown Theatre","loc":"Kansas City, MO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-22T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-23T08:00:00","bands":"Neko Case, Band of Horses, Lucero, Hayseed Dixie, Ryan Bingham, John Smith, Watermelon Slim, Kris Kristofferson, Brant Bjork, Justin Townes Earle, The Strangers, The Staves, Chance McCoy, Larkin Poe, Irish Mythen, Worry Dolls, The Marcus King Band, The Dead South, Jade Bird, Fantastic Negrito, Martin Harley, John Butler Trio","venue":"Eridge Park","loc":"Tunbridge Wells,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-21T19:00:08","bands":"Neko Case","venue":"Black Deer Festival (June 21-23)","loc":"Kent,  United Kingdom"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-01T19:00:01","bands":"Neko Case, Brandi Carlile, Emmy Lou Harris","venue":"Gorge Amphitheatre","loc":"George, WA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Neko Case/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-19T21:00:00","bands":"Neko Case","venue":"CINEMA SÃO JORGE - Sala Manoel de Oliveira","loc":"Lisboa,  Portugal"}
+--------------------------
+
+ query: No Matter What You Do 
+
+ {"artists":["Benny Benassi"],"title":"No Matter What You Do","url":"https://p.scdn.co/mp3-preview/a62c6f1c03cf373ff7f4daa4ab1f2da133aff0cf?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Hypnotica"}
+--------------------------
+
+ query: beeswing 
+
+ {"artists":["Christy Moore"],"title":"Beeswing","url":"https://p.scdn.co/mp3-preview/15612f4a94c1ae97913379d62e01c8ded6aef920?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"On the Road"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-05-15T19:00:44","bands":"The National","venue":"Union Transfer","loc":"Philadelphia, PA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-17T19:00:00","bands":"The National","venue":"St. Augustine Amphitheatre","loc":"St. Augustine, FL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-19T19:00:00","bands":"The National","venue":"The Anthem","loc":"Washington, DC United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-16T19:00:00","bands":"The National","venue":"Coca-Cola Roxy","loc":"Atlanta, GA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-21T19:00:00","bands":"The National","venue":"Place des Arts","loc":"Montreal,  Canada"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-22T19:00:00","bands":"The National","venue":"Pier 8","loc":"Hamilton,  Canada"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-12T19:00:00","bands":"The National","venue":"BRIC Celebrate Brooklyn! Festival at Prospect Park Bandshell","loc":"Brooklyn, NY United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-25T19:00:00","bands":"The National","venue":"Hill Auditorium","loc":"Ann Arbor, MI United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-26T19:00:00","bands":"The National","venue":"Farm Bureau Insurance Lawn at White River State Park","loc":"Indianapolis, IN United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-28T19:00:00","bands":"The National","venue":"Huntington Bank Pavilion at Northerly Island","loc":"Chicago, IL United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-20T19:00:00","bands":"The National","venue":"Thompson's Point","loc":"Portland, ME United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-08-29T19:00:00","bands":"The National","venue":"King County’s Marymoor Park","loc":"Redmond, WA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-08-30T19:00:00","bands":"The National","venue":"Edgefield","loc":"Troutdale, OR United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-24T19:00:00","bands":"The National","venue":"Express Live!","loc":"Columbus, OH United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-09-02T19:00:00","bands":"The National","venue":"Greek Theatre","loc":"Los Angeles, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-09-03T19:00:00","bands":"The National","venue":"Comerica Theatre","loc":"Phoenix, AZ United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-09-05T19:00:00","bands":"The National","venue":"Ogden Ampitheater","loc":"Ogden, UT United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-09-06T19:00:30","bands":"The National, Alvvays","venue":"The Mission Ballroom","loc":"Denver, CO United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-09-01T19:00:00","bands":"The National","venue":"Frost Amphitheater","loc":"Stanford, CA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-09-08T19:00:00","bands":"The National","venue":"Santa Fe Opera House","loc":"Santa Fe, NM United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-06-11T19:00:00","bands":"The National","venue":"Mann Center for the Performing Arts","loc":"Philadelphia, PA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-09-11T19:00:00","bands":"The National","venue":"White Oak Music Hall","loc":"Houston, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-10-16T19:00:57","bands":"The National","venue":"Pepsi Center WTC","loc":"México D.f.,  Mexico"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-10-24T19:00:03","bands":"The National","venue":"Agganis Arena","loc":"Boston, MA United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-08-28T19:00:00","bands":"The National","venue":"Festival Lawn at Deer Lake Park","loc":"Burnaby,  Canada"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-09-10T19:00:00","bands":"The National","venue":"Austin360 Amphitheater","loc":"Austin, TX United States"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/The National/events?app_id=codingbootcamp 
+
+ {"show":"2019-09-07T19:00:54","bands":"The National, Alvvays","venue":"The Mission Ballroom","loc":"Denver, CO United States"}
+--------------------------
+
+ query: Take me tonight 
+
+ {"artists":["Eddie Money"],"title":"Take Me Home Tonight","url":"https://p.scdn.co/mp3-preview/3d9c88b1db62fee1c9e999f15d839be95265a234?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Can't Hold Back"}
+--------------------------
+
+ query: Teach me tonight 
+
+ {"artists":["Dinah Washington"],"title":"Teach Me Tonight","url":null,"album":"The Complete Dinah Washington On Mercury, Vol.4 (1954-1956)"}
+--------------------------
+
+ query: She's like the wind 
+
+ {"artists":["Patrick Swayze","Wendy Fraser"],"title":"She's Like the Wind","url":"https://p.scdn.co/mp3-preview/0890dae2411fa79f6b9523d2eff5b98a1a434db2?cid=ebb0c9b3c3b74bd09831f4b69ba96f5f","album":"Dirty Dancing (Original Motion Picture Soundtrack)"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Kingsbury Manx/events?app_id=codingbootcamp 
+
+ 
+--------------------------
+
+ query: https://www.omdbapi.com/?t=the matrix&y=&plot=short&apikey=trilogy 
+
+ {"title":"The Matrix","year":"1999","imdb":"8.7/10","rtr":"88%","lang":"English","country":"USA","plot":"A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.","actors":"Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving"}
+--------------------------
+
+ query: https://rest.bandsintown.com/artists/Tool/events?app_id=codingbootcamp 
+
+ [object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+--------------------------
+
+ query: Tonight Tonight 
+
+ {"artists":["Brett Young"],"title":"Here Tonight","url":null,"album":"Ticket To L.A."}
